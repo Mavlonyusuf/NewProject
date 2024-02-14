@@ -4,10 +4,96 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TailwindCSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1>Hello TailwindCSS</h1>
+  <style>
+    @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
 
-    <h2>Salom</h2>
+    * {
+      font-family: "Montserrat", sans-serif;
+    }
+  </style>
+  <body class="min-h-screen bg-black">
+    <header>
+      <nav class="flex justify-between px-16 py-8 items-center">
+        <ul>
+          <li>
+            <a href="">
+              <img src="logo.png" alt="LogoImg" />
+            </a>
+          </li>
+        </ul>
+        <ul class="flex gap-8">
+          <li>
+            <a
+              href=""
+              class="text-slate-50 text-lg font-semibold uppercase transition-all duration-500 hover:text-orange-700"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-slate-50 text-lg font-semibold uppercase transition-all duration-500 hover:text-orange-700"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-slate-50 text-lg font-semibold uppercase transition-all duration-500 hover:text-orange-700"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main
+      class="bg-[url('main.png')] h-[600px] bg-no-repeat bg-cover bg-center mx-16 rounded-lg"
+    ></main>
+    <section class="my-20 flex flex-col gap-4">
+      <div class="flex justify-between px-16 items-center">
+        <div
+          class="bg-orange-400 py-12 px-36 rounded-lg flex flex-col items-center"
+        >
+          <img src="card_one.png" alt="cardOne" class="h-72 w-[400px]" />
+          <p class="font-bold text-5xl">SEO</p>
+        </div>
+        <div
+          class="bg-orange-400 py-12 px-36 rounded-lg flex flex-col items-center"
+        >
+          <img src="card_two.png" alt="cardTwo" class="h-72 w-[400px]" />
+          <p class="font-bold text-5xl">Development</p>
+        </div>
+      </div>
+      <div class="flex justify-between px-16 items-center">
+        <div
+          class="bg-orange-400 py-12 px-36 rounded-lg flex flex-col items-center"
+        >
+          <img src="card_one.png" alt="cardOne" class="h-72 w-[400px]" />
+          <p class="font-bold text-5xl">SEO</p>
+        </div>
+        <div
+          class="bg-orange-400 py-12 px-36 rounded-lg flex flex-col items-center"
+        >
+          <img src="card_two.png" alt="cardTwo" class="h-72 w-[400px]" />
+          <p class="font-bold text-5xl">Development</p>
+        </div>
+      </div>
+      <div class="flex justify-between px-16 items-center">
+        <div
+          class="bg-orange-400 py-12 px-36 rounded-lg flex flex-col items-center"
+        >
+          <img src="card_one.png" alt="cardOne" class="h-72 w-[400px]" />
+          <p class="font-bold text-5xl">SEO</p>
+        </div>
+        <div
+          class="bg-orange-400 py-12 px-36 rounded-lg flex flex-col items-center"
+        >
+          <img src="card_two.png" alt="cardTwo" class="h-72 w-[400px]" />
+          <p class="font-bold text-5xl">Development</p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
